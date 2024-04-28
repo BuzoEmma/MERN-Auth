@@ -1,0 +1,240 @@
+body {
+  /* box-sizing: border-box; */
+  width: 100%;
+  margin: auto;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Header.css */
+
+.main-nav {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light gray background */
+  border-bottom: 1px solid #ddd; /* Optional border */
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.navbar-button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar-button:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+
+/* Basic styling for the dropdown container */
+.dropDown {
+  position: relative; /* Required for absolute positioning of the dropdown list */
+  display: inline-block; /* Makes sure the dropdown stays in-line */
+}
+
+/* Styling for the main element (like a user name) */
+.dropDown h3 {
+  margin: 0;
+  padding: 8px 12px;
+  background-color: #f0f0f0; /* Light background */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+/* Dropdown list hidden initially */
+.dropDown-list {
+  display: none; /* Keeps the dropdown list hidden by default */
+  position: absolute; /* Positions relative to the parent */
+  top: 100%; /* Appears just below the trigger */
+  left: 0; /* Aligns with the parent */
+  background-color: white; /* Dropdown background */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for visual separation */
+  padding: 10px;
+  z-index: 1; /* Makes sure it appears above other elements */
+}
+
+/* Dropdown list shows on hover of the container */
+.dropDown:hover .dropDown-list {
+  display: block; /* Reveal the dropdown list */
+}
+
+/* Styling for the individual dropdown items */
+.dropDown-list a {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  padding: 8px 12px;
+  display: block; /* Ensures it fills the space */
+}
+
+.dropDown-list a:hover,
+.dropDown-list .logout-profile:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+/* Styling for non-link elements */
+.logout-profile {
+  padding: 8px 12px;
+  cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+
+
+
+
+/* Adjusting the Hero Section */
+.hero {
+  text-align: center; /* Center-align the content */
+  margin-top: 3rem; /* 3rem top margin */
+  padding: 20px; /* Padding for spacing */
+  background-color: #f0f0f0; /* Light background color */
+  width: 50%; /* Set width to 50% */
+  margin-left: auto; /* Center the container */
+  margin-right: auto; /* Center the container */
+}
+
+/* Button Styling with Border-Radius */
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+}
+
+.hero-button {
+  width: 100px;
+  background-color: #008cba; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  border: none; /* No border */
+  border-radius: 10px; /* Border-radius for rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.hero-button:hover {
+  background-color: #005f73; /* Darker blue on hover */
+}
+
+/* Text Button with Padding-Top */
+.text-button {
+  background-color: transparent; /* No background */
+  border: none; /* No border */
+  color: #007bff; /* Blue text, similar to a hyperlink */
+  cursor: pointer; /* Pointer cursor to indicate it's clickable */
+  text-decoration: underline; /* Underline to mimic a link */
+  padding-top: 10px; /* Padding-top for separation */
+  font-size: 1em; /* Consistent with paragraph text */
+  text-align: center; /* Center-align the text button */
+}
+
+.text-button:hover {
+  color: #0056b3; /* Darker blue on hover, like a link */
+}
+
+
+/* Form Container Styles */
+.form-container {
+  max-width: 400px; /* Limit the width of the container */
+  margin: 3rem auto; /* Center horizontally with 3rem top margin */
+  padding: 20px; /* Add some padding */
+  background-color: #f8f8f8; /* Light background color */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Space between form groups */
+}
+
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+  gap: 10px; /* Space between label and input */
+}
+
+input {
+  padding: 10px; /* Add padding for comfort */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Submit Button Styling */
+.submit-button {
+  padding: 10px 20px; /* Add padding */
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Register Link Styling */
+.register-link {
+  text-align: center; /* Center-align the link */
+  font-size: 1em; /* Consistent with other text */
+}
+
+.register-link a {
+  color: #007bff; /* Blue link */
+  text-decoration: underline; /* Underline to mimic a hyperlink */
+}
+
+.register-link a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+
+/* CSS for the spinner */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light gray border */
+  border-top: 8px solid #3498db; /* Blue border-top for the spinning effect */
+  border-radius: 50%; /* Circular shape */
+  width: 40px; /* Spinner width */
+  height: 40px; /* Spinner height */
+  animation: spin 1s linear infinite; /* Animation properties */
+  margin: auto; /* Centers the spinner */
+}
+
+/* Animation keyframes for spinning effect */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Starting position */
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}
